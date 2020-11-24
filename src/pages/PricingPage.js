@@ -8,7 +8,29 @@ class PricingPage extends React.Component{
   render(){
     return(
       <React.Fragment>
-        <Header/>
+        <Header
+          companyName="Geek Pricing App"
+          navBarLinks={
+            [
+              {
+                nameLink:"Facebook",
+                url:"https://facebook.com/"
+              },
+              {
+                nameLink:"Twitter",
+                url:"https://twitter.com/"
+              },
+              {
+                nameLink:"Linkedin",
+                url:"https://linkedin.com/"
+              },
+              {
+                nameLink:"Instagram",
+                url:"https://instagram.com/"
+              }
+            ]
+          }
+        />
         <MainPricing/>
         <Footer/>
       </React.Fragment>
